@@ -7,8 +7,26 @@
     <link
   </head>
   <body>
-    <div class="container" style="display: flex; flex-direction: row">
-      <div style="width: 33%; background-color: whitesmoke"></div>
+    <nav style="display: flex; flex-direction: row">
+      <div style="width: 33%;">
+          <span onclick="openNav()" class="mobile-nav-open-icon">&#9776</span>
+       <!-- this would work as the backdrop when navbar is open-->
+       <div class="backdrop-container" id="backdrop"></div>
+       <!--the would be the drawer and it's content-->
+       <div id="mySidenav" class="sidenav-container">
+         <span class="drawer-close-button">
+       <!--icon for closing of the navbar-->
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         </span>
+       <!--Each links on the navbar-->
+         <a href="../Main/form.html" >Login/Sign Up</a>
+         <a href="#home" >New In</a>
+         <a href="#about" >Products</a>
+         <a href="#works" onclick="closeNav()">Back In Stock</a>
+         <a href="#contact" onclick="closeNav()">Shop</a>
+       </div>
+      </div>
+      <script src="../Js/main.js"></script>
       <div style="width: 33%; text-align: center">
         <a
           href="../Main/index.html"
@@ -25,25 +43,32 @@
         style="
           justify-content: flex-end;
           display: flex;
-          background-color: whitesmoke;
           flex-direction: row;
           width: 33%;
+          align-items: center;
         "
       >
-        <i
-          class="fab fa-twitter"
-          style="margin-top: 1.9rem; margin-right: 1rem"
-        ></i>
+        <a
+         style='margin-right: 1.5rem;text-decoration: none;'
+          href="../Main/form.html"
+        >
+          Login/Sign Up
+        </a>
+        <a href="">
+          <i style='margin-top:0.2rem'
+            class="fab fa-twitter"
+          ></i>
+        </a>
       </div>
-    </div>
+    </nav>
     <div class="whiteBar">
       <a class="bar" href="../Main/newIn.html">New In</a>
       <a class="bar" href="../Main/form.html">Shop</a>
       <a class="bar" href="">Products</a>
       <a class="bar" href="">Back in Stock</a>
     </div>
-    <div style="height: 9vh; background-color: rosybrown">
-      <p>Hello</p>
+    <div style="height: 9vh;">
+     
     </div>
     <div style="display: flex; flex-wrap: wrap">
       <div style="width: 50%">
@@ -120,50 +145,44 @@
         </form>
       </div>
     </div>
-    <div
-      style="
-        margin-top: 2.5rem;
-        background-color: whitesmoke;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        height: 50vh;
-      "
+    <footer class='footer'>
+    <div class='main-content'
     >
-      <div style="display: flex; justify-content: center; align-items: center">
-        <ul>
-          <li style="list-style: none">
-            <a style="text-decoration: none" href="http://google.com"
-              >Customer Care</a
-            >
-          </li>
-          <li style="list-style: none">
-            <a style="text-decoration: none" href="http://google.com"
-              >Outlets</a
-            >
-          </li>
-        </ul>
+      <div class='footer-component '>
+        <a class='footer-text' href="http://google.com"
+        >Customer Care</a
+      >
+      <a class='footer-text' href="http://google.com"
+      >About Us</a
+    >
       </div>
-      <div style="display: flex; justify-content: center; align-items: center">
-        <ul>
-          <li style="list-style: none">
-            <a style="text-decoration: none" href="http://google.com"
-              >Shipping</a
-            >
-          </li>
-          <li style="list-style: none">
-            <a style="text-decoration: none" href="http://google.com"
-              >Returns & Exchange</a
-            >
-          </li>
-        </ul>
+      <div class='footer-component '>
+          <a class='footer-text' href="http://google.com"
+          >Customer Care</a
+        >
+        <a class='footer-text' href="http://google.com"
+        >About Us</a
+      >
       </div>
-      <div style="display: flex; justify-content: center; align-items: center">
-        <ul>
-          <li style="list-style: none">FAQ</li>
-          <li style="list-style: none">Terms and Conditions</li>
-        </ul>
+      <div class='footer-component '>
+          <a class='footer-text' href="http://google.com"
+          >Help</a
+        >
+        <a class='footer-text' href="http://google.com"
+        >Hello</a
+      >
       </div>
+      <div class='footer-component '>
+        <a class='footer-text' href="http://google.com"
+        >Social Media</a
+      >
+      <a class='footer-text' href="http://google.com"
+      >Enquiries</a
+    >
     </div>
+    </div>
+    </div>
+  </div>
+  </footer>
   </body>
 </html>

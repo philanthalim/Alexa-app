@@ -10,9 +10,27 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-color: whitesmoke">
-    <div class="container" style="display: flex; flex-direction: row">
-      <div style="width: 33%; background-color: whitesmoke"></div>
+  <body style="background-color: white">
+    <nav style="display: flex; flex-direction: row">
+      <div style="width: 33%; background-color: white">
+          <span onclick="openNav()" class="mobile-nav-open-icon">&#9776</span>
+       <!-- this would work as the backdrop when navbar is open-->
+       <div class="backdrop-container" id="backdrop"></div>
+       <!--the would be the drawer and it's content-->
+       <div id="mySidenav" class="sidenav-container">
+         <span class="drawer-close-button">
+       <!--icon for closing of the navbar-->
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         </span>
+       <!--Each links on the navbar-->
+         <a href="../Main/form.html" >Login/Sign Up</a>
+         <a href="#home" >New In</a>
+         <a href="#about" >Products</a>
+         <a href="#works" onclick="closeNav()">Back In Stock</a>
+         <a href="#contact" onclick="closeNav()">Shop</a>
+       </div>
+      </div>
+      <script src="../Js/main.js"></script>
       <div style="width: 33%; text-align: center">
         <a
           href="../Main/index.html"
@@ -29,25 +47,25 @@
         style="
           justify-content: flex-end;
           display: flex;
-          background-color: whitesmoke;
+          background-color: white;
           flex-direction: row;
           width: 33%;
+          align-items: center;
         "
       >
         <a
-          style="text-decoration: none; margin-top: 1.9rem; margin-right: 1rem"
+         style='margin-right: 1.5rem;text-decoration: none;'
           href="../Main/form.html"
         >
           Login/Sign Up
         </a>
         <a href="">
-          <i
+          <i style='margin-top:0.2rem'
             class="fab fa-twitter"
-            style="margin-top: 1.9rem; margin-right: 1rem"
           ></i>
         </a>
       </div>
-    </div>
+    </nav>
     <div class="whiteBar">
       <a class="bar" href="../Main/newIn.html">New In</a>
       <a class="bar" href="">Shop</a>
