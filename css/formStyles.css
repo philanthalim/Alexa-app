@@ -1,0 +1,62 @@
+@font-face {
+    font-family: AlexBrush-Regular;
+    src: url("../fonts/AlexBrush-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  html {
+    font-size: 100%;
+  }
+  * {
+    margin: 0;
+  }
+
+  .container {
+    background-color: off-white;
+    height: 80px;
+  }
+  a:visited,
+  a:link {
+    color: #4a4646;
+  }
+  a:hover,
+  a:active {
+    color: #4a4646;
+  }
+  /*
+  p::first-line {
+    color: green;
+  } */
+
+  
+  .bar {
+    text-decoration: none; /*remove line*/
+    font-size: 16px;
+    margin: 10px;
+    text-transform: uppercase;
+  }
+  
+  .whiteBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 0.5px solid;
+    border-bottom: 0.5px solid;
+    border-color: #eddfdf;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .whiteBar {
+      background-color: white;
+      height: 60px;
+      display: none; /*remove white bar when width <700px */
+      justify-content: space-around;
+      align-items: center;
+    }
+    @media screen and (min-width: 400px) {
+      html {
+        font-size: 65%;
+      }
+    }
+  }
+  

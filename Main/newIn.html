@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title>My first WebPage</title>
+    <link rel="stylesheet" href="/css/newIn.css" />
+  </head>
+  <body>
+    <div
+      class="container"
+      style="
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: whitesmoke;
+      "
+    >
+      <a
+        href="../Main/index.html"
+        style="
+          font-family: AlexBrush-Regular;
+          font-size: 3rem;
+          text-decoration: none;
+          color: black;
+        "
+        >Alexa</a
+      >
+      >
+    </div>
+    <ol>
+      <li>bake</li>
+      <li>Cook</li>
+      <li>Mix</li>
+    </ol>
+    <table>
+      <tr>
+        <th>Country</th>
+        <th>OrderID</th>
+        <th>Order Amount</th>
+      </tr>
+      <tr>
+        <td>USA</td>
+        <td>1000</td>
+        <td>1300</td>
+      </tr>
+      <tr>
+        <td>USA</td>
+        <td>1001</td>
+        <td>700</td>
+      </tr>
+    </table>
+    <a
+      href="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cute-cat-photos-1593441022.jpg?crop=0.669xw:1.00xh;0.166xw,0&resize=640:*"
+      >Click for photo</a
+    >
+
+    <form style="padding: 10px">
+      <input type="text" list="countries" autocomplete="false" />
+      <datalist id="countries">
+        <option data-value="1">Australia</option>
+        <option>America</option>
+        <option>China</option>
+      </datalist>
+    </form>
+    <form style="padding: 10px">
+      <select>
+        <option>Select a Course...</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>ASP.Net</option>
+      </select>
+    </form>
+    <div style="padding: 20; background-color: deeppink">
+      <h1>To-Do List</h1>
+      <input id="inputField" type="text" />
+      <button id="addToDo">+</button>
+      <div class="to-dos" id="toDoContainer"></div>
+    </div>
+    <script src="../Js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: AlexBrush-Regular;
+    src: url("../fonts/AlexBrush-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  html {
+    font-size: 100%;
+  }
+  * {
+    margin: 0;
+  }
+
+  .container {
+    background-color: off-white;
+    height: 80px;
+  }
+  a:visited,
+  a:link {
+    color: #4a4646;
+  }
+  a:hover,
+  a:active {
+    color: #4a4646;
+  }
+  /*
+  p::first-line {
+    color: green;
+  } */
+  table,
+  td,
+  th {
+    border: 1px solid #c4dcf3;
+    border-color: lightblue;
+    border-collapse: collapse;
+  }
+  
+  .paragraph-styling {
+    margin:10px;
+    font-size: 90;
+    
+  }
+  
+
+  
+  
