@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="eng">
   <head>
-    <title>My first WebPage</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Alexa|All things beautiful</title>
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -10,9 +12,15 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-color: white">
-    <nav style="display: flex; flex-direction: row">
-      <div style="width: 33%; background-color: white">
+  <body>
+    <nav style='height:9vh;'>
+      <div style="width: 33%">
+        <div class="whiteBar">
+          <a class="bar" href="">New In
+          <a class="bar" href="">Shop</a>
+          <a class="bar" href="">Products</a>
+          <a class="bar" href="">Back in Stock</a>
+        </div>
           <span onclick="openNav()" class="mobile-nav-open-icon">&#9776</span>
        <!-- this would work as the backdrop when navbar is open-->
        <div class="backdrop-container" id="backdrop"></div>
@@ -23,20 +31,19 @@
            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
          </span>
        <!--Each links on the navbar-->
-         <a href="../Main/form.html" >Login/Sign Up</a>
-         <a href="#home" >New In</a>
-         <a href="#about" >Products</a>
-         <a href="#works" onclick="closeNav()">Back In Stock</a>
-         <a href="#contact" onclick="closeNav()">Shop</a>
+         <a href="./form.html" >Login/Sign Up</a>
+         <a href="#" >New In</a>
+         <a href="#" >Products</a>
+         <a href="#" onclick="closeNav()">Back In Stock</a>
+         <a href="#" onclick="closeNav()">Shop</a>
        </div>
       </div>
-      <script src="../Js/main.js"></script>
-      <div style="width: 33%; text-align: center">
-        <a
-          href="../Main/index.html"
+      <script src="./Js/main.js"></script>
+      <div style="width: 33%; display: flex;justify-content: center;align-items: center;background-color: null;">
+        <a href="./index.html"
           style="
             font-family: AlexBrush-Regular;
-            font-size: 3.5rem;
+            font-size: 4rem;
             text-decoration: none;
             color: black;
           "
@@ -47,31 +54,20 @@
         style="
           justify-content: flex-end;
           display: flex;
-          background-color: white;
           flex-direction: row;
           width: 33%;
           align-items: center;
         "
       >
-        <a
-         style='margin-right: 1.5rem;text-decoration: none;'
-          href="../Main/form.html"
-        >
-          Login/Sign Up
+        <a class='searchIcon' href="">
+        <i class="fas fa-search"></i>
         </a>
-        <a href="">
-          <i style='margin-top:0.2rem'
-            class="fab fa-twitter"
-          ></i>
-        </a>
+        <a class='signUpNav' href="./form.html">Login/Register</a>
+        <a class='small-user' style='display: none;'><i class="fas fa-user"></i></a>
       </div>
-    </nav>
-    <div class="whiteBar">
-      <a class="bar" href="../Main/newIn.html">New In</a>
-      <a class="bar" href="">Shop</a>
-      <a class="bar" href="">Products</a>
-      <a class="bar" href="">Back in Stock</a>
     </div>
+    </nav>
+
     <div
       style="
         justify-content: center;
@@ -92,7 +88,7 @@
       />
     </div>
     <div style="margin-top: 20px; justify-content: center; display: flex">
-      <p style="font-size: 1.5rem; color: #4a4646">New In</p>
+      <p style="font-size: 2.5rem; color: #4a4646">Featured Products</p>
     </div>
 
     <div
@@ -141,5 +137,33 @@
         />
       </div>
     </div>
+    <footer class='footer'>
+      <div class='main-content'>
+        <div class='footer-component'>
+          <p class='footer-heading' href="">Find Out More</p>
+          <p class='footer-text' href="">About Us</p>
+          <p class='footer-text' href="">Customer Care</p>
+          <p class='footer-text' href="">Privacy Policy</p>
+          <p class='footer-text' href="">FAQ</p>
+        </div>
+        <div class='footer-component'>
+          <p class='footer-heading'>Outlet</p>
+          <p class='footer-sub-heading'>Jurong Point</p>
+          <p class='footer-text'>3 Jurong Dr, #B2-01 Jurong Point<br>Singapore 608532</p>
+          <p class='footer-sub-heading'>Operating Hours</p>
+          <p class='footer-text'>Sun - Thur: 10am - 8pm<br>Fri - Sat: 10am - 9pm</p>
+        </div>
+        <div class='footer-component'>
+          <p class='footer-heading' href="">Contact Us</p>
+          <p class='footer-sub-heading'>Phone</p>
+          <p class='footer-text'>Hotline: +65 67860000</p>
+          <p class='footer-text'>Whatsapp: +65 84550000</p>
+          <p class='footer-sub-heading' >Email</p>
+          <p class='footer-text'>Please kindly email us at admin@alexa.com.sg for any<br> enquiry after operations hours.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+    </footer>
   </body>
 </html>

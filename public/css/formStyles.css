@@ -7,27 +7,14 @@
 html {
   font-size: 100%;
 }
+body {
+  padding-top: 9vh;
+}
+
 * {
   margin: 0;
 }
 
-body {
-  padding-top: 10vh;
-}
-.image1 {
-  height: auto;
-  width: 100%;
-  margin-top: 3rem;
-  padding: 1rem;
-  max-width: 300px;
-}
-
-.singleImage {
-  padding: 0 20px 20px;
-  width: 100%;
-  max-width: 280px;
-  height: auto;
-}
 a:visited,
 a:link,
 a:hover,
@@ -39,38 +26,53 @@ a:active {
   text-decoration: none; /*remove line*/
   font-size: 16px;
   margin: 10px;
-  text-transform: uppercase;
 }
 
 .whiteBar {
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: center;
   border-top: 0.5px solid;
   border-bottom: 0.5px solid;
   border-color: #eddfdf;
-  background-color: white;
+  background-color: null;
+  height: 6vh;
 }
-
-@media only screen and (max-width: 700px) {
+.signUpNav {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.searchIcon{
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.login-text{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 900px) {
   .whiteBar {
-    background-color: white;
-    height: 60px;
     display: none; /*remove white bar when width <700px */
-    justify-content: space-around;
-    align-items: center;
   }
-
-  @media screen and (min-width: 400px) {
-    html {
-      font-size: 65%;
-    }
+  .signUpNav {
+    display: none;
+  }
+  .small-user {
+    display: flex;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
   }
 }
 
-.paragraph-styling {
-  margin: 10px;
-  font-size: 90;
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 65%;
+  }
 }
 
 /* Drawer Nav */
@@ -158,5 +160,53 @@ nav {
 @media screen and (min-width: 700px) {
   .mobile-nav-open-icon {
     display: none;
+  }
+}
+
+.footer {
+  margin-top: 2.5rem;
+  background-color: #f0e2d1;
+  width: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer-component {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin-top: 2rem;
+}
+
+.footer-heading {
+  line-height: 30px;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 3rem;
+  border-bottom: 1px solid;
+}
+.footer-sub-heading {
+  margin-left: 3rem;
+  font-size: 1.8rem;
+  margin-top:2rem;
+  margin-bottom:2rem
+}
+
+.footer-text {
+  line-height: 30px;
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  margin-top:1.5rem;
+  margin-bottom:1.5rem
+
+}
+@media screen and (max-width: 500px) {
+  .footer-component {
+    width: 100%;
   }
 }

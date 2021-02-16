@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/formStyles.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous"
+  />
+  </head>
+  <body>
+    <nav style="height:9vh;background-color:#f0e2d1">
+      <div style="width: 33%;">
+        <div class="whiteBar">
+          <a class="bar" href="">New In</a>
+          <a class="bar" href="">Shop</a>
+          <a class="bar" href="">Products</a>
+          <a class="bar" href="">Back in Stock</a>
+        </div>
+          <span onclick="openNav()" class="mobile-nav-open-icon">&#9776</span>
+       <!-- this would work as the backdrop when navbar is open-->
+       <div class="backdrop-container" id="backdrop"></div>
+       <!--the would be the drawer and it's content-->
+       <div id="mySidenav" class="sidenav-container">
+         <span class="drawer-close-button">
+       <!--icon for closing of the navbar-->
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         </span>
+       <!--Each links on the navbar-->
+         <a href="./form.html" >Login/Sign Up</a>
+         <a href="#home" >New In</a>
+         <a href="#about" >Products</a>
+         <a href="#works" onclick="closeNav()">Back In Stock</a>
+         <a href="#contact" onclick="closeNav()">Shop</a>
+       </div>
+      </div>
+      <script src="../Js/main.js"></script>
+      <div style="width: 33%; text-align: center">
+        <a
+          href="./index.html"
+          style="
+            font-family: AlexBrush-Regular;
+            font-size: 4rem;
+            text-decoration: none;
+            color: black;
+          "
+          >Alexa</a
+        >
+      </div>
+      <div
+        style="
+          justify-content: flex-end;
+          display: flex;
+          flex-direction: row;
+          width: 33%;
+          align-items: center;
+        "
+      >
+      <a class='searchIcon' href="">
+       <i class="fas fa-search"></i>
+      </a>
+      <a class='signUpNav' href="./form.html">Login/Register</a>
+      </div>
+    </nav>
+ <div style='height:7vh'></div>
+      <div style='display: flex;align-items: center;justify-content: center;' >
+        <form action="https://formspree.io/f/xrgodjzw" method="POST">
+          <div style='margin-top:2rem;margin-bottom: 2rem;'>
+            <p style="font-size: 2.2rem; margin-bottom: 10px;text-align: center;">LOG IN</p>
+            <label style="display: block; margin-bottom: 0.2rem;font-size: 1.5rem;">Email Address</label>
+            <input
+              style="padding: 0.8rem 0.8rem; width: 30rem"
+              type="email"
+              name="email"
+            />
+          </div>
+          <div style='margin-top:2rem;margin-bottom: 2rem;'>
+            <label style="display: block; margin-bottom: 0.2rem;font-size: 1.5rem;">Password</label >
+            <input
+              style="padding: 0.8rem 0.8rem;width:30rem"
+              type="password"
+              name="password"
+            />
+          </div>
+          <div style='display: flex;align-items: center;justify-content: center;flex-direction: column'>
+            <p class='login-text'>Forgot Password?</p>
+            <a class='login-text' href='' style='text-decoration: none;'>Sign In</a>
+            <p class='login-text'>Create Account</p>
+          </div>
+         
+        </form>
+      </div>
+    
+    <div style='height:20vh'></div>
+    <footer class='footer'>
+    <div class='main-content'>
+      <div class='footer-component'>
+        <p class='footer-heading' href="">Find Out More</p>
+        <p class='footer-text' href="">About Us</p>
+        <p class='footer-text' href="">Customer Care</p>
+        <p class='footer-text' href="">Privacy Policy</p>
+        <p class='footer-text' href="">FAQ</p>
+      </div>
+      <div class='footer-component'>
+        <p class='footer-heading'>Outlet</p>
+        <p class='footer-sub-heading'>Jurong Point</p>
+        <p class='footer-text'>3 Jurong Dr, #B2-01 Jurong Point<br>Singapore 608532</p>
+        <p class='footer-sub-heading'>Operating Hours</p>
+        <p class='footer-text'>Sun - Thur: 10am - 8pm<br>Fri - Sat: 10am - 9pm</p>
+      </div>
+      <div class='footer-component'>
+        <p class='footer-heading' href="">Contact Us</p>
+        <p class='footer-sub-heading'>Phone</p>
+        <p class='footer-text'>Hotline: +65 67860000</p>
+        <p class='footer-text'>Whatsapp: +65 84550000</p>
+        <p class='footer-sub-heading' >Email</p>
+        <p class='footer-text'>Please kindly email us at admin@alexa.com.sg for any<br> enquiry after operations hours.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  </footer>
+  </body>
+</html>

@@ -8,13 +8,27 @@ html {
   font-size: 100%;
 }
 body {
-  padding-top: 10vh;
+  padding-top: 9vh;
 }
 
 * {
   margin: 0;
 }
 
+.image1 {
+  height: auto;
+  width: 100%;
+  margin-top: 3rem;
+  padding: 1rem;
+  max-width: 300px;
+}
+
+.singleImage {
+  padding: 0 20px 20px;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+}
 a:visited,
 a:link,
 a:hover,
@@ -26,32 +40,54 @@ a:active {
   text-decoration: none; /*remove line*/
   font-size: 16px;
   margin: 10px;
-  text-transform: uppercase;
 }
 
 .whiteBar {
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: center;
   border-top: 0.5px solid;
   border-bottom: 0.5px solid;
   border-color: #eddfdf;
+  background-color: null;
+  height: 6vh;
 }
 
-@media only screen and (max-width: 700px) {
-  .whiteBar {
-    background-color: white;
-    height: 60px;
-    display: none; /*remove white bar when width <700px */
-    justify-content: space-around;
-    align-items: center;
-  }
+.signUpNav {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.searchIcon{
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
 
-  @media screen and (min-width: 400px) {
-    html {
-      font-size: 65%;
-    }
+@media screen and (max-width: 900px) {
+  .whiteBar {
+    display: none; /*remove white bar when width 900px */
   }
+  .signUpNav {
+    display: none;
+  }
+  .small-user {
+    display: flex;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+.paragraph-styling {
+  margin: 10px;
+  font-size: 90;
 }
 
 /* Drawer Nav */
@@ -64,7 +100,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: #f0e2d1;
 }
 
 .mobile-nav-open-icon {
@@ -136,7 +172,7 @@ nav {
 }
 
 /*show drawer nav for smaller screens */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .mobile-nav-open-icon {
     display: none;
   }
@@ -145,7 +181,6 @@ nav {
 .footer {
   margin-top: 2.5rem;
   background-color: #f0e2d1;
-  height: 50vh;
   width: 100%;
 }
 
@@ -153,23 +188,41 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
 }
 
 .footer-component {
   display: flex;
   flex-direction: column;
-  width: 25%;
-  align-items: center;
-  margin-top:2rem
+  width: 33%;
+  margin-top: 2rem;
+}
+
+.footer-heading {
+  line-height: 30px;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 3rem;
+  border-bottom: 1px solid;
+}
+.footer-sub-heading {
+  margin-left: 3rem;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .footer-text {
   line-height: 30px;
-  text-decoration: none;
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 @media screen and (max-width: 500px) {
   .footer-component {
     width: 100%;
   }
 }
+
+/* drop-down */
