@@ -1,6 +1,6 @@
 # Simple Responsive Website
 
-Hosted via Firebase 
+No Frameworks used. Pure HTML/CSS used. Hosted via Firebase 
 
 https://alexahostingwebsite.web.app/
 
