@@ -1,6 +1,5 @@
 # Simple Responsive Website
 
-Implemented drawer navigator using Javascript. 
 Hosted via Firebase 
 
 https://alexahostingwebsite.web.app/
