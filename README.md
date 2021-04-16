@@ -1,6 +1,6 @@
 # Simple Responsive Website
 
-My first web app project created with only simple JS, HTML and CSS. No Frameworks used. Hosted via Firebase. 
+My first web app project created with only JS, HTML and CSS. No Frameworks used. Hosted via Firebase. I built this interface with the intention of working on my html/css and web-responsiveness. 
 
 https://alexahostingwebsite.web.app/
 
