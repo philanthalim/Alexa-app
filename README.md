@@ -1,6 +1,6 @@
 # Simple Responsive Website
 
-No Frameworks used. Pure HTML/CSS used. Hosted via Firebase 
+My first web app project created with only simple JS, HTML and CSS. No Frameworks used. Hosted via Firebase. 
 
 https://alexahostingwebsite.web.app/
 
